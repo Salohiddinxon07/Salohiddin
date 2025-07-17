@@ -5,34 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p{ 
-            color :red
-             font-size: 20px;
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        h3 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section iframe {
+            margin: 10px 0;
+            max-width: 100%;
         }
     </style>
 </head>
 <body>
-    <h3>Har qanday masalaga <b style="color: red; ">Islom</b>da yechim bor</h3> 
-    
-    <div class = "podcast">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/pVfxaTrw4qc?si=KAZr4oevestcsfxJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Kr3nA_xeoh4?si=UGyeKYKci1FKkh31" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/tds74nXjCao?si=fVG_8EhlwAvSL3mo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/WomGnkf06bU?si=YaGblNMOhL5Vg4OM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PbQYdUuA6j4?si=QCe536Rxnq3q2xBn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <p>Quronda nomi keltirilgan hayvonlar </p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/upiS93DCR6o?si=KwQa3U2eD_3tH2cW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ynZZFIZCGPA?si=wkcyPKsP69SriN2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-   
-    <div class="Kitob">
-    <p>Quron</p>    
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/XsXNnzG3l-A?si=MPkZIC3ANau1fuKJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/AolRp43c1Bw?si=EcCSCBL-n-W_5uHf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <header>
+        <div>Islom Sayti</div>
+        <nav>
+            <a href="#quron">Quron</a>
+            <a href="#vidyolar">Video</a>
+            <a href="#multik">Multifilm</a>
+        </nav>
+    </header>
+
+    <h3>Har qanday masalaga <b style="color: red;">Islom</b>da yechim bor</h3>
+
+    <div class="section" id="vidyolar">
+        <h4>Vidyolar</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pVfxaTrw4qc?si=KAZr4oevestcsfxJ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Kr3nA_xeoh4?si=UGyeKYKci1FKkh31" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tds74nXjCao?si=fVG_8EhlwAvSL3mo" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WomGnkf06bU?si=YaGblNMOhL5Vg4OM" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PbQYdUuA6j4?si=QCe536Rxnq3q2xBn" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
     </div>
 
-    <p>Vidyo qo`shmoqchi bo`lsangiz bizga yuboring</p>
-    <a href="https://t.me/Salohiddinxon">Bizning Telegramimiz</a>
+    <div class="section" id="multik">
+        <h4>Quronda nomi keltirilgan hayvonlar (Multifilm)</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/upiS93DCR6o?si=KwQa3U2eD_3tH2cW" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ynZZFIZCGPA?si=wkcyPKsP69SriN2w" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </div>
 
+    <div class="section" id="quron">
+        <h4>Quron</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XsXNnzG3l-A?si=MPkZIC3ANau1fuKJ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hwWpWoOtsBY?si=DzRXVEwMHXjrpQhs" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FiXekjOodac?si=fftBJSr7kC8fzofk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3IKd_V1JXQs?si=3wH-DEGJ_nkaxbB9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lH-siAW6qgI?si=tVZ5mu-jyFJHu3i-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hqt9lIFndko?si=mUKjRgDLbWba1mX3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3IKd_V1JXQs?si=3wH-DEGJ_nkaxbB9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NuhowPIwQnY?si=xIRXYTEy0oGXy76g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WEkenhA5mPU?si=RLhCN5NoCZg0W0gQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Lu-n16Dvn_U?si=4nw2GPW8QjirUt-i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="section">
+        <p>Vidyo qo`shmoqchi bo`lsangiz bizga yuboring</p>
+        <a href="https://t.me/Salohiddinxon">Bizning Telegramimiz</a>
+    </div>
+
+    <footer>
+        &copy; 2025 Islom Sayti. Barcha huquqlar himoyalangan.
+    </footer>
 </body>
 </html>
