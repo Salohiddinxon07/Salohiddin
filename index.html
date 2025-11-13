@@ -1,112 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header nav a {
-            color: white;
-            margin-left: 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        header nav a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-        h3 {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .section {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        .section iframe {
-            margin: 10px 0;
-            max-width: 100%;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slayd-Shou</title>
+<style>
+    video{
+         width:100vw; height:100vh; object-fit:cover; display:block; 
+    }
+  body { margin:0; display:flex; flex-direction:column; align-items:center; justify-content:center; background:#000; }
+  img { width:100vw; height:100vh; object-fit:cover; display:block; }
+  .controls { position:fixed; top:50%; width:100%; display:flex; justify-content:space-between; pointer-events:none; }
+  .btn { background:rgba(255,255,255,0.3); color:#fff; border:none; font-size:24px; padding:12px 20px; cursor:pointer; pointer-events:auto; }
+</style>
 </head>
 <body>
-    <header>
-        <div>Islom Sayti</div>
-        <nav>
-            <a href="#quron">Quron</a>
-            <a href="#vidyolar">Video</a>
-            <a href="#multik">Multifilm</a>
-        </nav>
-    </header>
-    <h3>Har qanday masalaga <b style="color: red;">Islom</b>da yechim bor</h3>
-<p style="color:blue">Iltioms videolaringizni bizga yuboring Saytni kengayritishga yordam berasiz</p>
-    <p>Uzingiz foydali deb bilgan manbangizni yuboring qolganlar ham Manfat topsin</p>
-    
-<div> 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/G5t_L4EudcU?si=zCSkK7TGarAFDWE2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hRQWc_47kgE?si=cS9276jzwwApG_pY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/itkUJSYrg1U?si=yAGKsal2hTwU1Q1R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<img id="slide" src="result/Salohiddin.jpg" alt="Rasim">
+
+<div class="controls">
+  <button class="btn" onclick="prev()">&#10094; Oldingi</button>
+  <button class="btn" onclick="next()">Keyingi &#10095;</button>
 </div>
-    <div class="section" id="vidyolar">
-        <h4>Videolar</h4>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pVfxaTrw4qc?si=KAZr4oevestcsfxJ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Kr3nA_xeoh4?si=UGyeKYKci1FKkh31" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/tds74nXjCao?si=fVG_8EhlwAvSL3mo" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/WomGnkf06bU?si=YaGblNMOhL5Vg4OM" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/PbQYdUuA6j4?si=QCe536Rxnq3q2xBn" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Uby8q9fdGHs?si=81kat-khTLYWoLCx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
 
-    <div class="section" id="multik">
-        <h4>Quronda nomi keltirilgan hayvonlar (Multifilm)</h4>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/upiS93DCR6o?si=KwQa3U2eD_3tH2cW" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ynZZFIZCGPA?si=wkcyPKsP69SriN2w" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-    </div>
+<script>
+const images = [];
+for(let i=1; i<=22; i++){
+  if(i===1){
+    images.push('result/Salohiddin.jpg');
+  } else {
+    images.push(`result/Salohiddin-${i}.jpg`);
+  }
+}
 
-    <div class="section" id="quron">
-        <h4>Quron</h4>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/XsXNnzG3l-A?si=MPkZIC3ANau1fuKJ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hwWpWoOtsBY?si=DzRXVEwMHXjrpQhs" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/FiXekjOodac?si=fftBJSr7kC8fzofk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3IKd_V1JXQs?si=3wH-DEGJ_nkaxbB9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/lH-siAW6qgI?si=tVZ5mu-jyFJHu3i-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hqt9lIFndko?si=mUKjRgDLbWba1mX3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3IKd_V1JXQs?si=3wH-DEGJ_nkaxbB9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/NuhowPIwQnY?si=xIRXYTEy0oGXy76g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/WEkenhA5mPU?si=RLhCN5NoCZg0W0gQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Lu-n16Dvn_U?si=4nw2GPW8QjirUt-i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+let current = 0;
+const slide = document.getElementById('slide');
 
-    <div class="section">
-        <p>Vidyo qo`shmoqchi bo`lsangiz bizga yuboring</p>
-        <a href="https://t.me/Salohiddinxon">Bizning Telegramimiz</a>
-    </div>
+function showSlide(){
+  slide.src = images[current];
+}
 
-    <footer>
-        &copy; 2025 Islom Sayti. Barcha huquqlar himoyalangan.
-    </footer>
+function next(){
+  current = (current + 1) % images.length;
+  showSlide();
+}
+
+function prev(){
+  current = (current - 1 + images.length) % images.length;
+  showSlide();
+}
+
+// Klaviatura bilan boshqarish
+document.addEventListener('keydown', e=>{
+  if(e.key==='ArrowRight') next();
+  if(e.key==='ArrowLeft') prev();
+});
+
+</script>
+<video id="video" src="result/Deep%20Learning%20Cars.mp4" controls autoplay muted style="width:100vw; height:100vh; object-fit:cover;"></video>
+
+
 </body>
 </html>
-
